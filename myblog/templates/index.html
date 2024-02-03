@@ -1,0 +1,24 @@
+{% load static %}
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyBlog</title>
+  <link rel="stylesheet" href="{%static 'styles.css' %}">
+</head>
+
+<body>
+
+</body>
+
+<form action="/create_notification/" method="post">
+    <div class="crt_group">
+        <button class="creation_button" type="button" name="create">
+            <img src="{% static 'img/Creation_button.png' %}">
+        </button>
+
+        <button class="deletion_button" type="button" name="delete">
+            <img src="{% static 'img/Deletion_button.png' %}">
+        </button>
+    </div>
+</form>

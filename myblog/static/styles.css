@@ -1,0 +1,25 @@
+body {
+    background-color: #123;
+}
+
+.crt_group button{
+    border: 1px solid blue;
+    float: left;
+}
+
+
+.creation_button {
+    height: 50px;
+    width: 50px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.deletion_button {
+    height: 50px;
+    width: 50px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
