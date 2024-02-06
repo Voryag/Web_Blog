@@ -8,16 +8,23 @@
 </head>
 
 <body>
-    <form action="/create_notification/" method="post">
+    <form action="{% url 'create' %}" method="POST">
+        {% csrf_token %}
         <div class="crt_group">
-            <button class="creation_button" type="button" name="create">
+            <button class="creation_button" type="submit" >
                 <img src="{% static 'img/Creation_button.png' %}">
-            </button>
-
-            <button class="deletion_button" type="button" name="delete">
-                <img src="{% static 'img/Deletion_button.png' %}">
             </button>
         </div>
     </form>
+
+    <!-- КОД ДЛЯ ОБРАБОТКИ УДАЛЕНИЯ ЗАМЕТКИ
+    <form action="{% url 'delete' %}" method="POST">
+        <button class="deletion_button" type="submit" >
+            <img src="{% static 'img/Deletion_button.png' %}">
+        </button>
+    </form>
+    -->
+
+
 </body>
 
