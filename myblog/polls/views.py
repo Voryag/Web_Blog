@@ -9,7 +9,11 @@ def index_home(request):
 
 def redirect_create_page(request):
     if request.method == 'POST':
+        print('1')
+        return HttpResponseRedirect("1")
+
         if request.POST.get('create'):
+            print('Create button is touched')
             return HttpResponseRedirect(reverse('create_notification_page.html'))
         elif request.POST.get('delete'): # ПЕРЕАДРЕСАЦИЮ НЕ ВЫПОЛНЯТЬ
             return HttpResponseRedirect(reverse('delete'))
