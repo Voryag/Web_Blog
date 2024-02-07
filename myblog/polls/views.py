@@ -9,7 +9,6 @@ def render_index(request):
 
 def redirect_create_page(request):
     if request.method == "POST":
-        print("1")
         return HttpResponse("1")
 
         #if request.POST.get('create'):
@@ -20,5 +19,5 @@ def redirect_create_page(request):
 
     return render(request, "index.html")
 
-def new_create_page(request):
+def render_create_page(request):
     return render(request, "create_notification_page.html")
