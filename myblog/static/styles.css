@@ -24,10 +24,12 @@ body {
     justify-content: center;
 }
 
-.link_github {
-    width = 50;
-    height = 1000;
-    min-height: 10em;
-    display: table-cell;
-    vertical-align: middle
+a {
+    font-family: Impact, sans-serif;
+    color: #CE937;
+    position: fixed;
+    text-decoration: none;
+    border: 2px solid red;
+    padding: 5px;
+    top: 50%
 }
