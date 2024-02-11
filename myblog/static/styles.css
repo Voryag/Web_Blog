@@ -14,7 +14,15 @@ body {
     display:flex;
     align-items:center;
     justify-content: center;
+    position:relative;
+    margin:0;
 }
+
+.creation_button:after { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,.5);  opacity: 0; }
+.creation_button:before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url(icon-path); opacity: 0; }
+.creation_button:hover:before,
+.creation_button:hover:after { opacity: 1; }
+
 
 .deletion_button {
     height: 50px;
