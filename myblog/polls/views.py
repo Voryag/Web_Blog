@@ -8,8 +8,14 @@ def render_index(request):
     return render(request, "index.html")
 
 def redirect_create_page(request):
+    note = request.POST.get('note')
+    print(note)
+
     if request.method == "POST":
-        return HttpResponse("1")
+        if request.POST.get('create'):
+            print('Create button is touched')
+
+        return render(request, "create_notification_page.html")
 
         #if request.POST.get('create'):
         #    print('Create button is touched')
@@ -18,6 +24,3 @@ def redirect_create_page(request):
         #    return HttpResponseRedirect(reverse('delete'))
 
     return render(request, "index.html")
-
-def render_create_page(request):
-    return render(request, "create_notification_page.html")

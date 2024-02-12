@@ -1,10 +1,18 @@
-<!DOCTYPE html>
+{% load static %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Create_note</title>
+    <link rel="stylesheet" href="{% static 'create_note.css' %}">
 </head>
-<body>
 
+<body>
+    <h1>Enter your note:</h1>
+    <form method="post">
+        {% csrf_token %}
+        <input type="text" name="note" placeholder="note"><br>
+        <input type="submit" value="Enter">
+    </form>
 </body>
 </html>
