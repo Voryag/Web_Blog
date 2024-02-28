@@ -1,5 +1,5 @@
 from django import forms
-from .models import *
+from myblog.polls.models import *
 
 class AddNotes(models.Model):
     note = forms.CharField(max_length=255)

@@ -1,9 +1,6 @@
 from django.shortcuts import render
-from django.http import HttpResponseRedirect, HttpResponse
-from django.urls import reverse
-from django.shortcuts import redirect
 
-from models import Note
+from .models import Note
 
 
 def render_index(request):
@@ -14,7 +11,7 @@ def redirect_create_page(request):
     if note != None:
         print(note)
         note_in_base = Note(note)
-        note.save()
+        note_in_base.save()
 
     if request.method == "POST":
         if request.POST.get('create'):

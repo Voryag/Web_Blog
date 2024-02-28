@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'polls',
 ]
 
 MIDDLEWARE = [
@@ -76,9 +77,9 @@ WSGI_APPLICATION = 'myblog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'DB/Notes.mwb',
+        'NAME': 'Notes',
         'USER': 'root',
-        'PASSWORD': '0000',
+        'PASSWORD': '5rynR4AABGApcc!',
         'HOST': 'localhost',
         'PORT': '3306',
     }
